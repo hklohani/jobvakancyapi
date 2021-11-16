@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <dl>
+        <% jobs.forEach(function(job){ %>
+            <div style="margin-top: 6px;">
+                <dt>Company Name: <%- job.company %></dt>
+                <dd>About Company: <%- job.companyInformation %></dd>
+                <dt>jobInformation: <%- job.jobInformation %></dt>
+                <dd>rolesAndResponsibilities: <%- job.rolesAndResponsibilities %></dd>
+                <hr/>
+            </div>
+            
+        <% }); %>
+      </dl>
+    </body>
+</html>

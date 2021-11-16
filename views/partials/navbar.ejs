@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+html {
+    background: white;
+    /* background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fdf9f6), color-stop(50%, #fee3c3)); */
+    color: #5e4b45;
+}
+
+
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: burlywood;
+
+}
+
+header .alignleft {
+    width: 15%;
+}
+
+header .alignright {
+    width: 15%;
+}
+
+header .aligncenter {
+    width: 70%;
+    margin-right: 50px;
+}
+
+header div {
+    text-align: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #e0caca;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0 18px;
+}
+
+header a:hover{
+    background: white;
+    opacity: 0.5;
+}
+
+.btn {
+    padding: 11px 20px;
+    border-radius: 5px;
+    background: #ff7272;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="alignleft">
+            <img src="/img/jobvakancy.png" alt="logo" style="width: 118px;" onclick="document.location.href='https://google.com'">
+        </div>
+        <div class="aligncenter">
+            <span><a href="/jobs">Government Jobs</a></span>
+            <span><a href="#">B.E/B.Tech Jobs</a></span>
+            <span><a href="#">Tech Blog</a></span>
+        </div>
+        <div class="alignright">
+            <button class="btn">Contact Us</button>
+        </div>
+    </header>
+</body>
+</html>

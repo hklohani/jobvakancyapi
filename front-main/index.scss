@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+html {
+    background: rgb(253, 249, 246);
+    background: linear-gradient(90deg, rgba(253, 249, 246, 1) 50%, rgba(254, 227, 195, 1) 50%);
+    color: #5e4b45;
+}
+
+.btn {
+    padding: 11px 20px;
+    border-radius: 5px;
+    background: #ff7272;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    .alignleft {
+        width: 15%;
+    }
+    .alignright {
+        width: 15%;
+    }
+    .aligncenter {
+        width: 70%;
+        margin-right: 50px;
+    }
+    div {
+        text-align: center;
+        align-self: center;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        border: 1px solid #e0caca;
+        padding: 3px;
+        border-radius: 5px;
+        margin: 0 18px;
+    }
+}
+
+.main_section-left {
+    width: 50%;
+    h1,
+    p {
+        margin-left: 15%;
+    }
+    .main_section-subscribe {
+        margin-left: 15%;
+        display: flex;
+        width: 71%;
+        justify-content: space-between;
+        input {
+            border-radius: 5px;
+            border-color: #ff7272;
+            width: 69%;
+        }
+    }
+}
+
+.main_section-right {
+    width: 50%;
+    h1 {
+        text-align: center;
+    }
+    .notification_banner {
+        width: 74%;
+        height: 4px;
+        background-color: #fee3c3;
+        box-shadow: 0 17px 14px #af6565;
+        margin: auto;
+        position: relative;
+        top: 14px;
+    }
+    .notification_link {
+        width: 500px;
+        height: 400px;
+        margin: auto;
+        overflow: auto;
+        box-shadow: inset 0 0 15px #af6565;
+        margin-top: 10px;
+        ul {
+            margin-top: 44px;
+        }
+        li {
+            list-style-type: none;
+            width: 90%;
+            padding: 11px;
+            border-radius: 10px;
+            font-size: 15px;
+            margin: 14px 0;
+            box-shadow: 0 0 5px #af6565;
+            background-color: rgba(253, 249, 246, 1);
+            a {
+                text-decoration: none;
+                color: #615a53;
+            }
+        }
+    }
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(212, 192, 192);
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #978c8c;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
